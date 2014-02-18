@@ -2,6 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#CCC"
     tools:context=".HomeActivity" >
 
     <RelativeLayout
@@ -12,27 +13,18 @@
         android:paddingRight="@dimen/activity_horizontal_margin"
         android:paddingTop="@dimen/activity_vertical_margin" >
 
-        <Spinner
-            android:id="@+id/freq_spinner"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:layout_margin="20dp" />
-
-        <Spinner
-            android:id="@+id/inten_spinner"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/freq_spinner"
-            android:layout_centerHorizontal="true"
-            android:layout_margin="20dp" />
+        <LinearLayout
+            android:id="@+id/graph1"
+            android:layout_width="fill_parent"
+            android:layout_height="250dip"
+            android:orientation="vertical" />
 
         <LinearLayout
             android:id="@+id/duration_layout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="20dp"
-            android:layout_below="@id/inten_spinner"
+            android:layout_below="@id/graph1"
             android:orientation="vertical" >
 
             <TextView
@@ -50,8 +42,8 @@
             android:id="@+id/num_of_faded_samples_layout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="20dp"
             android:layout_below="@id/duration_layout"
+            android:layout_margin="20dp"
             android:orientation="vertical" >
 
             <TextView
@@ -69,8 +61,8 @@
             android:id="@+id/ear_choice_layout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="20dp"
             android:layout_below="@id/num_of_faded_samples_layout"
+            android:layout_margin="20dp"
             android:orientation="vertical" >
 
             <TextView
